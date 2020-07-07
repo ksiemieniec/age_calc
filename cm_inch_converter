@@ -1,0 +1,10 @@
+lenght = int(input("Type lenght value which you want to convert "))
+unit = input("is it in centimeters (cm) or in inches (in)? ")
+if unit == "cm":
+    converted = lenght * 0.393700787
+    print(f'{lenght} centimeters = {converted} inches')
+elif unit == "in":
+    converted = lenght * 2.54
+    print(f'{lenght} inches = {converted} centimeters')
+else:
+    print("Error - unit is incorrect")
