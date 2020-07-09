@@ -1,0 +1,4 @@
+a = int(input("Input number where you want to start "))
+z = int(input("Input number where you want to end "))
+for number in range(a, z):
+    print(number)
