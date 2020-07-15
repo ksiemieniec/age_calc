@@ -1,0 +1,10 @@
+startmood = input("What is your current mood? ")
+mood = startmood.split()
+moods = {
+    "happy": ":)",
+    "sad": ":("
+}
+output = ""
+for x in mood:
+    output += moods.get(x, x)
+print(output)
