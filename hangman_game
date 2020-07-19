@@ -1,0 +1,21 @@
+import random
+print("Hangman Game")
+print("Category: Geography")
+print("Guess the continent")
+continents = ("Europa", "Asia", "Africa", "South America", "North America", "Antarctica", "Oceania")
+correct = random.choice(continents)
+lose_life = 0
+life = 3
+answer_word = "Word: " + " _" * len(correct)
+print(answer_word)
+while life > lose_life:
+    answer = input("Type your answer here: ").title()
+    life = life - 1
+    if answer == correct:
+        print("This is correct answer. You won")
+        break
+    elif answer != correct:
+        print("Wrong answer, try again")
+        print(f"Lifes left: {life}")
+else:
+    print(f"Lifes left: {life}. You lose. Correct answer is {correct}")
