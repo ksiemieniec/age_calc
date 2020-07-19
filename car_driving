@@ -1,0 +1,41 @@
+engine_started = False
+
+while True:
+    command = input("Type command: ").lower()
+
+    if command == "start":
+        if engine_started == True:
+            print("Engine is allready started")
+        else:
+            print("You started the engine")
+            engine_started = True
+    elif command == "stop":
+        if engine_started == True:
+            print("You stopped the engine")
+            engine_started = False
+        else:
+            print("Engine is allready off")
+    elif command == "forward":
+        if engine_started == True:
+            print("You moved forward")
+        else:
+            print("Engine is off")
+    elif command == "back":
+        if engine_started == True:
+            print("You moved backward")
+        else:
+            print("Engine is off")
+    elif command == "left":
+        if engine_started == True:
+            print("You moved left")
+        else:
+            print("Engine is off")
+    elif command == "right":
+        if engine_started == True:
+            print("You moved right")
+        else:
+            print("Engine is off")
+    elif command == "help":
+        print("Commands: start, stop, forward, backward, left, right")
+    else:
+        print("Unknown command")
