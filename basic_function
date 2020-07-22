@@ -1,0 +1,6 @@
+def calc(x):
+    y = 5
+    s = y - x
+    print(s)
+calc(10)
+calc(5)
