@@ -1,0 +1,13 @@
+def emails(email):
+
+    emails = {
+        "Bot's email": "no-reply@konrad.pl",
+        "Admin email": "admin@konrad.pl",
+        "Client email": ""
+    }
+
+    emails["Client email"] += email
+    return emails
+
+
+print(emails(input("Type your e-mail address to join newsletter: ")))
