@@ -1,0 +1,6 @@
+number = int(input("Input a number to countdown: "))
+while number > 0:
+    print(f"In: {number}")
+    number -= 1
+else:
+    print("STOP")
