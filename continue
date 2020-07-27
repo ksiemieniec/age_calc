@@ -1,0 +1,5 @@
+fruits = ["mango", "tomato", "potato", "watermelon"]
+for x in fruits:
+    if x == "potato":
+        continue
+    print("I like " + x)
