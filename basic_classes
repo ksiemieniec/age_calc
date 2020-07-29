@@ -1,18 +1,10 @@
-class Car:
-    def __init__(self, start, stop):
-        self.start = start
-        self.stop = stop
+class Dog:
+    def __init__(self, breed):
+        self.breed = breed
 
-    def brand(self):
-        print("Audi")
+    def bark(self):
+        print("Bark")
 
-    def colour(self):
-        print("Black")
-
-    def move(self):
-        print("Move")
-
-
-car = Car("Start", "Stop")
-car.start = "start"
-print(car.start)
+dog = Dog("German Shepherd")
+print(dog.breed)
+dog.bark()
