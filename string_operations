@@ -1,0 +1,9 @@
+print('She said "I want this"')
+print("He said \"I'm on it\"") #backslash tells next sign to be interpeted as a text
+x = 53
+print(f"I am a {x} old man")
+print("This costs " + str(x+5) + " dollars")
+print("Hello" + " " + "Konrad")
+y = "Hello:Konrad".split(":")
+print(y)
+print(y[1])
