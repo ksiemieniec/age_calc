@@ -1,0 +1,22 @@
+class Laptop:
+    def type(self):
+        print("Computer")
+
+    def color(self):
+        print("Grey")
+
+class Calculator:
+    def type(self):
+        print("Computer")
+
+    def color(self):
+        print("Black")
+
+def computer(obj):
+    obj.type()
+    obj.color()
+
+laptop = Laptop()
+calculator = Calculator()
+computer(laptop)
+computer(calculator)
