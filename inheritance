@@ -1,0 +1,27 @@
+class Parrot:
+    def fly(self):
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+
+
+class Sparrow:
+    def fly(self):
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+        print("x")
+
+        #bad habit
+
+class Pidgeon(Parrot): #inheritance
+    pass
+
+
+pidgeon = Pidgeon()
+pidgeon.fly()
