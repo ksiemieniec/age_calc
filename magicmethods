@@ -1,0 +1,5 @@
+class MagicMethods:
+    x = (5).__add__(3)
+    name = "Konrad".__repr__()
+    print(x)
+    print(name)
