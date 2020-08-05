@@ -1,0 +1,13 @@
+#first_file
+
+import parametry
+
+x = int(input("Number: "))
+
+parametry.rownosc(x)
+
+#second_file
+
+def rownosc(x):
+    y = x + 1
+    print(y)
