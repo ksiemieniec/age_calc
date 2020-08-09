@@ -1,0 +1,20 @@
+import openpyxl as xl
+
+workbook = xl.load_workbook("student_notes.xlsx")
+sheet = workbook["Arkusz1"]
+
+for row in range(2, sheet.max_row + 1):
+    math = sheet.cell(row, 3).value
+    polish = sheet.cell(row, 4).value
+    english = sheet.cell(row, 5).value
+
+    total_points = math + polish + english
+    total_points_cell = sheet.cell(row, 6)
+    total_points_cell.value = total_points
+
+    total_percent = round(total_points / 3)
+    total_percent_cell = sheet.cell(row, 7)
+    total_percent_cell.value = total_percent
+
+workbook.save("student_notes_calculated.xlsx")
+print("Saved")
