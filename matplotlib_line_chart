@@ -1,0 +1,13 @@
+from matplotlib import pyplot as plt
+
+months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+income_apple = [100, 200, 500, 300, 500, 500, 900, 1000, 800, 200, 100, 900]
+income_microsoft = [200, 100, 400, 800, 200, 800, 1000, 1100, 400, 100, 100, 700]
+plt.plot(months, income_apple, marker="o", color="red")
+plt.plot(months, income_microsoft, marker="x", color="blue")
+plt.title("Income of companies\n")
+plt.xlabel("months")
+plt.ylabel("income")
+plt.legend(["Apple", "Microsoft"])
+plt.grid()
+plt.show()
