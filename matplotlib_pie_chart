@@ -1,0 +1,11 @@
+from matplotlib import pyplot as plt
+
+reseller = ["Mark", "Louis", "Helena", "Stachu"]
+income = [1000, 4000, 3000, 10000]
+explode = (0, 0, 0.1, 0)
+colors = ["green", "orange", "blue", "red"]
+plt.pie(income, labels=reseller, autopct="%1.2f%%", startangle=45, explode=explode, colors=colors)
+plt.title("Resellers income\n")
+plt.legend(reseller)
+plt.axis("equal") #position of components
+plt.show()
